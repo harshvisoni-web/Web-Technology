@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Part-3</title>
+  </head>
+  <body>
+    <h2>Forms</h2><br>
+    <form>
+      <label for="name">Name : </label>
+      <input type="text" id="name"><br><br>
+      <label for="email">E-mail : </label>
+      <input type="email" id="email" placeholder="abc@gmail.com"><br><br>
+      <label for="number">Mobile Number : </label>
+      <input type="text" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789"><br><br>
+      <label for="birthdate">D.O.B : </label>
+      <input type="date" id="birthdate" name="birthdate"><br><br>
+      <label for="gender">Gender : </label>
+      <input type="radio" id="gender1" name="gender" value="male">
+      <label for="gender1">Male</label>
+      <input type="radio" id="gender2" name="gender" value="female">
+      <label for="gender2">Female</label>
+      <input type="radio" id="gender3" name="gender" value="other">
+      <label for="gender3">Other</label><br><br>
+      <label for="address">Address : </label>
+      <textarea rows="5" cols="50" id="address"></textarea><br><br>
+      <label for="skills">Skills : </label>
+      <input type="checkbox" id="skills1" name="skills" value="html">
+      <label for="skills1">HTML</label>
+      <input type="checkbox" id="skills2" name="skills" value="css">
+      <label for="skills2">CSS</label>
+      <input type="checkbox" id="skills3" name="skills" value="javascript">
+      <label for="skills3">JavaScript</label><br><br>
+      <label for="experience">Experience : </label>
+      <input type="range" id="experience" value="10"><br><br>
+      <label for="salary">Expected Salary(in K) : </label>
+      <input type="number" id="salary" name="salary"><br><br>
+      <label for="resume">Upload Resume : </label>
+      <input type="file" id="resume" name="resume"><br><br>
+      <label for="time">Available Time : </label>
+      <input type="time" id="time" name="time"><br><br>
+      <label for="role">Job Role : </label>
+      <select id="role" name="role">
+        <option value="manager">Manager</option>
+        <option value="webmaster">Web-Master</option>
+        <option value="documentation">Documentation-Head</option>
+        <option value="publicity">Publicity-Head</option>
+        <option value="cordinator">Coordinator</option>
+      </select><br><br>
+      <label for="educational_details">Educational Details : </label>
+      <table id="educational_details" rows="3" cols="3" cellpadding="5" cellspacing="5" border="solid">
+        <tr>
+          <th><b>Degree</b></th>
+          <th><b>Institute</b></th>
+          <th><b>Year</b></th>
+          <th><b>CGPA</b></th>
+        </tr>
+        <tr>
+          <th><b>Bachelors</b></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th><b>Masters</b></th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table><br><br>
+      <label for="application_status">Application Status : </label>
+      <progress id="application_status" value="32%" max="100%">32%</progress><br><br>
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
