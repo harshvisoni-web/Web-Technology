@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Part-5</title>
+    <style>
+      body{
+        font-family: Arial,Sans-Serif;
+        background-color: lightblue;
+        margin: 0;
+        padding: 0;
+      }
+      header,footer{
+        background-color: grey;
+        text-align: center;
+        color: white;
+        padding: 15px;
+      }
+      nav{
+        background-color: white;
+        padding: 10px;
+        text-align: center;
+      }
+      nav a{
+        color: black;
+        margin: 10px;
+        text-decoration: none;
+      }
+      section{
+        padding: 20px;
+      }
+      article{
+        background-color: white;
+        padding: 50px;
+        border-radius: 5px;
+        width: 80%;
+        margin: auto;
+      }
+      input,select,textarea{
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0%;
+      }
+      input[type="reset"]{
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]{
+        background-color: lightgreen;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hackathon-2026</h1>
+      <p>Online Event Registration</p>
+    </header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <section>
+      <article>
+        <h2>Registration Form</h2>
+        <hr>
+        <form>
+          <label for="name">Name : </label>
+          <input type="text" id="name" placeholder="John Doe"><br><br>
+          <label for="email">E-mail : </label>
+          <input type="email" id="email" placeholder="abc@gmail.com"><br><br>
+          <label for="phone">Phone Number : </label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+          <label for="birthdate">D.O.B : </label>
+          <input type="date" id="birthdate" name="birthdate"><br><br>
+          <label for="time">Prefered Time : </label>
+          <input type="time" id="time" name="time"><br><br>
+          <label for="url">Website/Portfolio : </label>
+          <input type="url" id="url"><br><br>
+          <label for="experience">Experirence Level : </label>
+          <input type="range" min="0" max="10" id="experience"><br><br>
+          <label for="events">Select events : </label>
+          <select>
+            <option>Web Development</option>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Full-Stack Developer</option>
+            <option>MERN Developer</option>
+          </select><br><br>
+          <label for="color">Favourite Color : </label>
+          <input type="color" id="color" name="color"><br><br>
+          <label for="city">Choose City : </label>
+          <input list="cities">
+          <datalist id="cities">
+            <option value="Anand"></option>
+            <option value="Vadodara"></option>
+            <option value="Ahmedabad"></option>
+            <option value="Surat"></option>
+            <option value="Rajkot"></option>
+            <option value="Gandhinagar"></option>
+          </datalist><br><br>
+          <label for="address">Address : </label>
+          <textarea rows="5" cols="30"></textarea><br><br>
+          <input type="submit" value="Register"><br><br>
+          <input type="reset" value="Clear"><br><br>
+        </form>
+      </article>
+    </section>
+    <section>
+      <h2 style="text-align:center;">Hackathon Trailer Video</h2>
+      <center>
+        <video width="400" controls>
+          <source src="video.mp4" type="video/mp4">
+          Your Browser Does Not Support this Format.
+        </video>
+      </center>
+    </section>
+    <section>
+      <h2 style="text-align:center;">Hackathon Theme Song</h2>
+      <center>
+        <audio controls>
+          <source src="audio.mp4" type="audio/mpeg">
+          Your Browser Does Not Support this Format
+        </audio>
+      </center>
+    </section>
+    <footer>
+      <p> &copy; 2026 Hackathon | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
